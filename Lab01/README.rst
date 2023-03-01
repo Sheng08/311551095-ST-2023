@@ -1,4 +1,4 @@
-Lab 1 Spec
+Lab01 Spec
 ============
 
 In this Lab, you are going to implement unit test for ``Students``. 
