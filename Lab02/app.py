@@ -37,12 +37,9 @@ class Application:
 			print('all selected')
 			return None
 		person = self.get_random_person()
-		# print("1", person)
-		while person in self.selected: # If selected, will keep selecting until it finds a new
+		while person in self.selected:
 			person = self.get_random_person()
-			# print('3', person)
 		self.selected.append(person)
-		# print('2', person)
 		return person
 
 	def notify_selected(self):
