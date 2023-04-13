@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import Select
 
 ## Setup chrome options
 options = Options()
-# options.add_argument('--headless')  # Ensure GUI is off
+options.add_argument('--headless')  # Ensure GUI is off
 options.add_argument('--window-size=1920,1080')
 options.add_argument('--disable-gpu')
 
@@ -39,6 +39,6 @@ print(ctx)
 # search = driver.find_element("placeholder", "快速搜尋")
 # print(search)
 
-time.sleep(20)
+# time.sleep(20)
 # close two tabs
 driver.quit()
