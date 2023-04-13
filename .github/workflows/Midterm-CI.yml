@@ -27,4 +27,5 @@ jobs:
           cat log.txt
       - name: Run Q2
         run: |
+          cd Midterm/part2
           python3 app.py
