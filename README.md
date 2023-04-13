@@ -7,4 +7,5 @@
 ![Lab02 CI](https://github.com/Sheng08/311551095-ST-2023/actions/workflows/Lab02-CI.yml/badge.svg)<br>
 ![Lab03 CI](https://github.com/Sheng08/311551095-ST-2023/actions/workflows/Lab03-CI.yml/badge.svg)<br>
 ![Lab04 CI](https://github.com/Sheng08/311551095-ST-2023/actions/workflows/Lab04-CI.yml/badge.svg)<br>
-![Lab05 CI](https://github.com/Sheng08/311551095-ST-2023/actions/workflows/Lab05-CI.yml/badge.svg)
+![Lab05 CI](https://github.com/Sheng08/311551095-ST-2023/actions/workflows/Lab05-CI.yml/badge.svg)<br>
+![Midterm CI](https://github.com/Sheng08/311551095-ST-2023/actions/workflows/Midterm-CI.yml/badge.svg)
