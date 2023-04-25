@@ -94,10 +94,7 @@ int main(){
 #### Valgrind report
 ![](https://i.imgur.com/KPKDU7K.png)
 
-
-:::success
 * ASan能，Valgrind能
-:::
 
 ### Stack out-of-bounds read/write
 
@@ -121,10 +118,7 @@ int main(){
 #### Valgrind report
 ![](https://i.imgur.com/TA6Gwen.png)
 
-
-:::success
 * ASan能，Valgrind不能
-:::
 
 
 ### Global out-of-bounds read/write
@@ -151,10 +145,8 @@ int main(){
 #### Valgrind report
 ![](https://i.imgur.com/1a1D5OA.png)
 
-
-:::success
 * ASan能，Valgrind不能
-:::
+
 
 ### Use-after-free
 
@@ -180,10 +172,7 @@ int main(){
 #### Valgrind report
 ![](https://i.imgur.com/OFI9NXX.png)
 
-
-:::success
 * ASan能，Valgrind能
-:::
 
 
 ### Use-after-return
@@ -212,13 +201,11 @@ int main() {
 
 #### ASan report
 > **Note**
-:::info
 執行前須加上 SAN_OPTIONS=detect_stack_use_after_return=1，才能抓到錯誤
 ```shell=
 $ gcc -fsanitize=address -g -o test5 test5.c
 $ ASAN_OPTIONS=detect_stack_use_after_return=1 ./test5
 ```
-:::
 
 ![](https://i.imgur.com/yAd8FLg.png)
 
@@ -226,10 +213,7 @@ $ ASAN_OPTIONS=detect_stack_use_after_return=1 ./test5
 #### Valgrind report
 ![](https://i.imgur.com/pYu432w.png)
 
-
-:::success
 * ASan能，Valgrind不能
-:::
 
 ---
 
@@ -260,17 +244,12 @@ $ ./lab6_2
 ```
 ![](https://i.imgur.com/KBuaJnQ.png)
 
-:::success
 * **ASan 無法找出錯誤**
-
-    `a[8+0] ~ a[8+7]` 在 redzone 內可以抓到錯誤
-    `a[8+8]` 以後，會越過 redzone 無法抓到錯誤
-:::
+  > `a[8+0] ~ a[8+7]` 在 redzone 內可以抓到錯誤 <br>
+  > `a[8+8]` 以後，會越過 redzone 無法抓到錯誤
 
 ### No Cross Redzone (補充)
 
 > **Note**
-:::info
 `a[8+0] ~ a[8+7]` 在 redzone 內 ASan 可以抓到錯誤
 ![](https://i.imgur.com/F43rPko.png)
-:::
