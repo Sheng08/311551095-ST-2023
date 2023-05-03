@@ -62,7 +62,7 @@ The commands (steps) used in this lab
 ```bash=
 $ apt update
 $ apt install -y git vim gcc g++ unzip python3 python3-pip
-$ apt apt install automake autoconf libtool pkg-config
+$ apt install automake autoconf libtool pkg-config
 ```
 3. Build AFL
 ```bash=
