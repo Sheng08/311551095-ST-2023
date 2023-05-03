@@ -13,7 +13,7 @@
     - [Lab Requirements](#lab-requirements)
         - [PoC](#poc)
         - [Step by Step](#step-by-step)
-        - [ALF Fuzzing](#alf-fuzzing)
+        - [AFL Fuzzing](#afl-fuzzing)
         - [Running AFL Lab](#running-afl-lab)
         - [Crash detail with ASAN error report](#crash-detail-with-asan-error-report)
         - [Additional](#additional)
@@ -76,8 +76,8 @@ $ make install
 $ git clone https://gitlab.gnome.org/GNOME/libxml2.git
 $ cd libxml2
 $ ./autogen.sh
-$ export CC=/work/AFL/afl-gcc    # alf C++ compiler
-$ export CXX=/work/AFL/afl-g++   # alf C compiler
+$ export CC=/work/AFL/afl-gcc    # AFL C++ compiler
+$ export CXX=/work/AFL/afl-g++   # AFL C compiler
 $ export AFL_USE_ASAN=1          # Use ASAN (Address SANitizer)
 $ ./configure --enable-shared=no
 $ make
@@ -101,7 +101,7 @@ $ cp test.bmp in/
 $ ./AFL/afl-fuzz -i in -o out -m none -- ./bmpgrayscale @@ a.bmp
 ```
 
-### ALF Fuzzing
+### AFL Fuzzing
 ```bash
 $ afl-fuzz -i in/ -o out/ -b 10 -m none -- ./target [argv1] @@ [argv2]
 ```
