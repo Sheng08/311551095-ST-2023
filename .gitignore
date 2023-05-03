@@ -1,3 +1,7 @@
 */__pycache__/
 **/etc/
 **/.DS_Store
+**/AFL/
+**/libxml2/
+**/out/
+**/a.bmp
